@@ -22,7 +22,7 @@ public class Trip {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
-    @Column(nullable = false) // não preciso passar o nome, pois é o mesmo que tem no banco ele já reconhece
+    @Column(nullable = false)
     private String destination;
 
     @Column(name = "starts_at", nullable = false)
